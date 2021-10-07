@@ -1,59 +1,129 @@
-// @font-face {
-//   font-family: 'Quicksand-Regular';
-//   font-weight: 400;
-//   font-style: normal;
-//   src: local('Quicksand-Regular'),
-//     url(../fonts/Quicksand-Regular.woff2) format('woff2'),
-//     url(../fonts/Quicksand-Regular.woff) format('woff');
-//   font-display: swap;
-// }
+@font-face {
+  font-family: 'ArtegraSansBlack';
+  font-weight: 900;
+  font-style: normal;
+  src: local('ArtegraSans-Black'),
+    url(../fonts/ArtegraSans-Black.woff2) format('woff2'),
+    url(../fonts/ArtegraSans-Black.woff) format('woff');
+  font-display: swap;
+}
 
-// @font-face {
-//   font-family: 'Quicksand-Medium';
-//   font-weight: 500;
-//   font-style: normal;
-//   src: local('Quicksand-Medium'),
-//     url(../fonts/Quicksand-Medium.woff2) format('woff2'),
-//     url(../fonts/Quicksand-Medium.woff) format('woff');
-//   font-display: swap;
-// }
+@font-face {
+  font-family: 'ArtegraSans-ExtraBold';
+  font-weight: 800;
+  font-style: normal;
+  src: local('ArtegraSans-ExtraBold'),
+    url(../fonts/ArtegraSans-ExtraBold.woff2) format('woff2'),
+    url(../fonts/ArtegraSans-ExtraBold.woff) format('woff');
+  font-display: swap;
+}
 
-// @font-face {
-//   font-family: 'Quicksand-Bold';
-//   font-weight: 700;
-//   font-style: normal;
-//   src: local('Quicksand-Bold'),
-//     url(../fonts/Quicksand-Bold.woff2) format('woff2'),
-//     url(../fonts/Quicksand-Bold.woff) format('woff');
-//   font-display: swap;
-// }
+@font-face {
+  font-family: 'ArtegraSans-SemiBold';
+  font-weight: 600;
+  font-style: normal;
+  src: local('ArtegraSans-SemiBold'),
+    url(../fonts/ArtegraSans-SemiBold.woff2) format('woff2'),
+    url(../fonts/ArtegraSans-SemiBold.woff) format('woff');
+  font-display: swap;
+}
 
-// @font-face {
-//   font-family: 'Roboto-Bold';
-//   font-weight: 700;
-//   font-style: normal;
-//   src: local('Roboto-Bold'),
-//     url(../fonts/Roboto-Bold.woff2) format('woff2'),
-//     url(../fonts/Roboto-Bold.woff) format('woff');
-//   font-display: swap;
-// }
+@font-face {
+  font-family: 'GothamPro-Bold';
+  font-weight: 700;
+  font-style: normal;
+  src: local('GothamPro-Bold'),
+    url(../fonts/GothamPro-Bold.woff2) format('woff2'),
+    url(../fonts/GothamPro-Bold.woff) format('woff');
+  font-display: swap;
+}
 
-// @font-face {
-//   font-family: 'Roboto-Medium';
-//   font-weight: 500;
-//   font-style: normal;
-//   src: local('Roboto-Medium'),
-//     url(../fonts/Roboto-Medium.woff2) format('woff2'),
-//     url(../fonts/Roboto-Medium.woff) format('woff');
-//   font-display: swap;
-// }
+@font-face {
+  font-family: 'GothamPro-Italic';
+  font-weight: 400;
+  font-style: italic;
+  src: local('GothamPro-Italic'),
+    url(../fonts/GothamPro-Italic.woff2) format('woff2'),
+    url(../fonts/GothamPro-Italic.woff) format('woff');
+  font-display: swap;
+}
 
-// @font-face {
-//   font-family: 'Roboto-Regular';
-//   font-weight: 400;
-//   font-style: normal;
-//   src: local('Roboto-Regular'),
-//     url(../fonts/Roboto-Regular.woff2) format('woff2'),
-//     url(../fonts/Roboto-Regular.woff) format('woff');
-//   font-display: swap;
-// }
+@font-face {
+  font-family: 'GothamPro-Light';
+  font-weight: 300;
+  font-style: normal;
+  src: local('GothamPro-Light'),
+    url(../fonts/GothamPro-Light.woff2) format('woff2'),
+    url(../fonts/GothamPro-Light.woff) format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GothamPro-Medium';
+  font-weight: 500;
+  font-style: normal;
+  src: local('GothamPro-Medium'),
+    url(../fonts/GothamPro-Medium.woff2) format('woff2'),
+    url(../fonts/GothamPro-Medium.woff) format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GothamPro';
+  font-weight: 400;
+  font-style: normal;
+  src: local('GothamPro'),
+    url(../fonts/GothamPro.woff2) format('woff2'),
+    url(../fonts/GothamPro.woff) format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat-Bold';
+  font-weight: 700;
+  font-style: normal;
+  src: local('Montserrat-Bold'),
+    url(../fonts/Montserrat-Bold.woff2) format('woff2'),
+    url(../fonts/Montserrat-Bold.woff) format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat-MediumItalic';
+  font-weight: 500;
+  font-style: italic;
+  src: local('Montserrat-MediumItalic'),
+    url(../fonts/Montserrat-MediumItalic.woff2) format('woff2'),
+    url(../fonts/Montserrat-MediumItalic.woff) format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat-Regular';
+  font-weight: 400;
+  font-style: normal;
+  src: local('Montserrat-Regular'),
+    url(../fonts/Montserrat-Regular.woff2) format('woff2'),
+    url(../fonts/Montserrat-Regular.woff) format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat-SemiBold';
+  font-weight: 600;
+  font-style: normal;
+  src: local('Montserrat-SemiBold'),
+    url(../fonts/Montserrat-SemiBold.woff2) format('woff2'),
+    url(../fonts/Montserrat-SemiBold.woff) format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto-Light';
+  font-weight: 300;
+  font-style: normal;
+  src: local('Roboto-Light'),
+    url(../fonts/Roboto-Light.woff2) format('woff2'),
+    url(../fonts/Roboto-Light.woff) format('woff');
+  font-display: swap;
+}

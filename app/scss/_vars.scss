@@ -67,30 +67,70 @@ $xxs: 375px;
 
 /*::::::::::::::::::::::::::миксин для брейкпоинтов-finish::::::::::::::::::::::*/
 /*::::::::::::::::::::::::::наследование для шрифтов::::::::::::::::::::::::::::*/
-// %quicksand-400 {
-//   font-family: 'Quicksand-Regular', sans-serif;
-//   font-weight: 400;
-// }
+%ArtegraSans-900 {
+  font-family: 'ArtegraSansBlack', sans-serif;
+  font-weight: 900;
+}
 
-// %quicksand-500 {
-//   font-family: 'Quicksand-Medium', sans-serif;
-//   font-weight: 500;
-// }
+%ArtegraSans-800 {
+  font-family: 'ArtegraSans-ExtraBold', sans-serif;
+  font-weight: 800;
+}
 
-// %roboto-700 {
-//   font-family: 'Roboto-Bold', sans-serif;
-//   font-weight: 700;
-// }
+%ArtegraSans-600 {
+  font-family: 'ArtegraSans-SemiBold', sans-serif;
+  font-weight: 600;
+}
 
-// %roboto-500 {
-//   font-family: 'Roboto-Medium', sans-serif;
-//   font-weight: 500;
-// }
+%GothamPro-700 {
+  font-family: 'GothamPro-Bold', sans-serif;
+  font-weight: 700;
+}
 
-// %roboto-400 {
-//   font-family: 'Roboto-Regular', sans-serif;
-//   font-weight: 400;
-// }
+%GothamPro-italic-400 {
+  font-family: 'GothamPro-Italic', sans-serif;
+  font-weight: 400;
+}
+
+%GothamPro-400 {
+  font-family: 'GothamPro-Light', sans-serif;
+  font-weight: 300;
+}
+
+%GothamPro-500 {
+  font-family: 'GothamPro-Medium', sans-serif;
+  font-weight: 500;
+}
+
+%GothamPro-400 {
+  font-family: 'GothamPro', sans-serif;
+  font-weight: 400;
+}
+
+%Montserrat-700 {
+  font-family: 'Montserrat-Bold', sans-serif;
+  font-weight: 700;
+}
+
+%Montserrat-500 {
+  font-family: 'Montserrat-MediumItalic', sans-serif;
+  font-weight: 500;
+}
+
+%Montserrat-400 {
+  font-family: 'Montserrat-Regular', sans-serif;
+  font-weight: 400;
+}
+
+%Montserrat-600 {
+  font-family: 'Montserrat-SemiBold', sans-serif;
+  font-weight: 600;
+}
+
+%Roboto-300 {
+  font-family: 'Roboto-Light', sans-serif;
+  font-weight: 300;
+}
 
 /*::::::::::::::::::::::::::наследование для шрифтов-finish:::::::::::::::::::::*/
 /*::::::::::::::::::::::::::наследование для кнопки:::::::::::::::::::::::::::::*/
