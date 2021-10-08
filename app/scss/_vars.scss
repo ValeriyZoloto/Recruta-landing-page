@@ -1,9 +1,12 @@
 /*::::::::::::::::::::::::::цвета:::::::::::::::::::::::::::::::::::::::::::::::*/
-// $accent:#fe3e57;
-// $default:#8d8d8d;
-// $title:#29282d;
-// $white: #ffffff;
-// $bg:#f6f6f6;
+$accent:#273895;
+$accent-light: #2741d0;
+$default:#404040;
+$title:#303030;
+$white: #ffffff;
+$white-light: #e9e9e9;
+$bg:#e5e5e5;
+$bg-light:#f4f7fa;
 // $yellow: #ffb534;
 // $blue: #34c3ff;
 /*::::::::::::::::::::::::::цвета-finish::::::::::::::::::::::::::::::::::::::::*/
@@ -24,23 +27,23 @@ $row-10:10;
 
 /*::::::::::::::::::::::::::mixins-finish::::::::::::::::::::::::::::::::::::::::*/
 /*::::::::::::::::::::::::::обои::::::::::::::::::::::::::::::::::::::::::::::::*/
-// %bg-left {
-//   background-position: left center;
-//   background-size: cover;
-//   background-repeat: no-repeat;
-// }
+%bg-left {
+  background-position: left center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
-// %bg-center-cover {
-//   background-position: center;
-//   background-size: cover;
-//   background-repeat: no-repeat;
-// }
+%bg-center-cover {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
-// %bg-center-contain {
-//   background-position: center;
-//   background-size: contain;
-//   background-repeat: no-repeat;
-// }
+%bg-center-contain {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 
 /*::::::::::::::::::::::::::обои-finish:::::::::::::::::::::::::::::::::::::::::*/
 /*::::::::::::::::::::::::::брекпоинты::::::::::::::::::::::::::::::::::::::::::*/
@@ -92,7 +95,7 @@ $xxs: 375px;
   font-weight: 400;
 }
 
-%GothamPro-400 {
+%GothamPro-300 {
   font-family: 'GothamPro-Light', sans-serif;
   font-weight: 300;
 }
@@ -112,7 +115,7 @@ $xxs: 375px;
   font-weight: 700;
 }
 
-%Montserrat-500 {
+%Montserrat-500-italic {
   font-family: 'Montserrat-MediumItalic', sans-serif;
   font-weight: 500;
 }
@@ -134,21 +137,32 @@ $xxs: 375px;
 
 /*::::::::::::::::::::::::::наследование для шрифтов-finish:::::::::::::::::::::*/
 /*::::::::::::::::::::::::::наследование для кнопки:::::::::::::::::::::::::::::*/
-// %btn {
-//   padding: 12px 26px;
-//   background-color: $accent;
-//   color: $white;
-//   text-transform: uppercase;
-//   @extend %roboto-400;
-//   box-shadow: 0px 7px 20px 0px rgba(255, 17, 48, 0.3);
-// }
+%btn {
+  padding: 16px 31px;
+  background-color: $accent;
+  color: $white;
+  @extend %GothamPro-700;
+  font-size: 16px;
+  line-height: 1.1;
+  border-radius: 15px;
+  border: 1px solid transparent;
+  transition: 0.5s;
+}
 
-// %btn-hover {
-//   background-color: #fff;
-//   color: #29282d;
-//   border: 1px solid #fe3e57;
-//   box-shadow: 20px 7px 20px 0px rgba(255, 17, 48, 0.3);
-// }
+%btn-focus {
+  box-shadow: 10px 7px 10px 0px $accent-light;
+}
+
+%btn-hover {
+  background-color: $white;
+  color: $accent;
+  border: 1px solid $accent;
+  border: 1px solid $accent;
+}
+
+%btn-active {
+  box-shadow: 20px 7px 20px 0px $accent-light;
+}
 
 // %checkbox-hiden {
 //   width: 1px;
