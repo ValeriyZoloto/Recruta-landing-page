@@ -1,5 +1,6 @@
 .footer {
-  border-top: 1px solid #dee6ef;
+  background-color: $bg;
+  border-top: 1px solid $line;
 
   &__top {
     padding: 32px 0;
@@ -26,5 +27,43 @@
     @extend %GothamPro-400;
     font-size: 12px;
     line-height: 1.66;
+  }
+
+  &__top-right {
+    max-width: 168px;
+  }
+
+  &__bottom {
+    padding: 16px 0;
+    background-color: $bg-footer;
+  }
+
+  &__bottom-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $gray;
+  }
+
+  &__bottom-copy {
+    @extend %GothamPro-400;
+    font-size: 12px;
+    line-height: 1.66;
+  }
+
+  &__bottom-politics {
+    max-width: 340px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @extend %GothamPro-400;
+    font-size: 10px;
+    line-height: 2;
+  }
+
+  &__bottom-item {
+    &:first-child {
+      margin-right: 16px;
+    }
   }
 }

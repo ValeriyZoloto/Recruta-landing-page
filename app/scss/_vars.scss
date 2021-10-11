@@ -7,6 +7,9 @@ $white: #ffffff;
 $white-light: #e9e9e9;
 $bg:#e5e5e5;
 $bg-light:#f4f7fa;
+$line:#dee6ef;
+$bg-footer:#e8edf3;
+$gray: #7a7a7a;
 // $yellow: #ffb534;
 // $blue: #34c3ff;
 /*::::::::::::::::::::::::::цвета-finish::::::::::::::::::::::::::::::::::::::::*/
@@ -83,6 +86,11 @@ $xxs: 375px;
 %ArtegraSans-600 {
   font-family: 'ArtegraSans-SemiBold', sans-serif;
   font-weight: 600;
+}
+
+%ArtegraSans-400 {
+  font-family: 'ArtegraSans-Regular', sans-serif;
+  font-weight: 400;
 }
 
 %GothamPro-700 {

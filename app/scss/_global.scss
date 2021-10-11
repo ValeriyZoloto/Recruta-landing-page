@@ -50,11 +50,10 @@ a {
 }
 
 .title {
-  // text-align: center;
-  // @extend %roboto-700;
-  // font-size: 48px;
-  // line-height: 1.35;
-  // color: $title;
+  @extend %GothamPro-700;
+  font-size: 32px;
+  line-height: 1.37;
+  color: $title;
   // text-transform: uppercase;
 
   // @include media-w($sms) {
@@ -136,4 +135,35 @@ a {
     }
 
   }
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__item {
+    padding: 9px;
+    width: 36px;
+    height: 36px;
+    border: 1px solid #cfdae7;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+
+    &:hover {
+      border: 2px solid #cfdae7;
+      padding: 8px;
+    }
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  &__item-svg {
+    width: 18px;
+    height: 18px;
+  }
+
 }

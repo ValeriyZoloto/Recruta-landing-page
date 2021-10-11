@@ -1,0 +1,239 @@
+.team {
+  padding: 95px 0 48px 0;
+
+  &__top {
+    max-width: 937px;
+    margin-left: 109px;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 44px;
+  }
+
+  &__content {
+    max-width: 438px;
+
+    p {
+      line-height: 150%;
+      max-width: 405px;
+    }
+  }
+
+  &__logo {
+    margin-bottom: 32px;
+  }
+
+  &__title {
+    margin-bottom: 26px;
+  }
+
+  &__cards {
+    max-width: 435px;
+  }
+
+  &__row {
+    &:first-child {
+      display: flex;
+      align-items: flex-end;
+      margin-bottom: 17px;
+    }
+
+  }
+
+  &__row-second {
+    margin-right: -14px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+
+  &__card {
+    background: linear-gradient(236.29deg, #FFFFFF 29.99%, #F4F9FF 79.17%);
+    box-shadow: 0px 4px 100px rgba(208, 218, 227, 0.57);
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 0px 10px 40px 0px rgb(162 162 162 / 50%);
+    }
+
+    &:first-child {
+      padding: 24px 29px 32px 28px;
+      width: 217px;
+      margin-right: 25px;
+    }
+
+    &:nth-child(2) {
+      padding: 19px 24px 24px 22px;
+      position: relative;
+      height: 137px;
+      width: 177px;
+
+      &::after {
+        position: absolute;
+        display: block;
+        content: '';
+        width: 159px;
+        height: 159px;
+        border-radius: 50%;
+        background: linear-gradient(90deg, #E1D8FF 21.57%, #F4ECFF 100%);
+        top: -64px;
+        right: -129px;
+        z-index: -1;
+      }
+    }
+
+  }
+
+  &__card-second {
+    position: relative;
+    background: linear-gradient(236.29deg, #FFFFFF 29.99%, #F4F9FF 79.17%);
+    box-shadow: 0px 4px 100px rgba(208, 218, 227, 0.57);
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 0px 10px 40px 0px rgb(162 162 162 / 50%);
+    }
+
+    &:first-child {
+      position: relative;
+      height: 135px;
+      padding: 19px 24px 24px 26px;
+      width: 179px;
+      margin-right: 26px;
+
+      &::after {
+        position: absolute;
+        display: block;
+        content: '';
+        width: 39px;
+        height: 39px;
+        border-radius: 50%;
+        background: linear-gradient(90deg, #E1D8FF 21.57%, #F4ECFF 100%);
+        top: -12px;
+        right: 157px;
+        z-index: -1;
+      }
+    }
+
+    &:nth-child(2) {
+      padding: 32px 29px 32px 32px;
+      width: 192px;
+      height: 171px;
+
+      &::after {
+        position: absolute;
+        display: block;
+        content: '';
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background: linear-gradient(90deg, #E1D8FF 21.57%, #F4ECFF 100%);
+        top: 27px;
+        right: 180px;
+        z-index: -1;
+      }
+    }
+  }
+
+  &__card-label {
+    display: flex;
+    align-items: flex-end;
+    background: linear-gradient(180deg, #4614E8 0%, #BCA7FF 100%, #7247FF, );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    &--first {
+      @extend %GothamPro-700;
+      font-size: 48px;
+      line-height: 1;
+      margin-bottom: 12px;
+    }
+
+    &--second {
+      @extend %GothamPro-700;
+      font-size: 36px;
+      line-height: 1.2;
+      display: block;
+      margin-bottom: 7px;
+    }
+
+    &--third {
+      @extend %GothamPro-700;
+      font-size: 36px;
+      line-height: 1.2;
+      display: block;
+      margin-bottom: 7px;
+    }
+
+    &--fours {
+      @extend %ArtegraSans-800;
+      font-size: 16px;
+      line-height: 44px;
+      letter-spacing: 0.17em;
+    }
+  }
+
+  &__card-litle {
+    &:first-child {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+  }
+
+  &__bottom {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1064px;
+  }
+
+  &__bottom-title {
+    @extend %GothamPro-700;
+    margin-bottom: 26px;
+  }
+
+  &__bottom-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 16px;
+  }
+
+  &__bottom-item {
+    max-width: 344px;
+    border: 1px solid transparent;
+    padding: 32px 32px 32px 32px;
+    background-color: $white;
+    border-radius: 10px;
+    text-align: left;
+    transition: border 0.5s, box-shadow 0.5s;
+
+    &:focus {
+      box-shadow: 0px 4px 100px rgba(132, 186, 233, 0.57);
+    }
+
+    &:hover {
+      border: 1px solid $accent-light;
+    }
+
+    &:active {
+      border: 1px solid $accent-light;
+      box-shadow: 0px 4px 100px rgba(132, 186, 233, 0.57);
+    }
+  }
+
+  &__bottom-img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 16px;
+  }
+
+  &__bottom-name {
+    @extend %GothamPro-700;
+    color: $title;
+    margin-bottom: 16px;
+  }
+}
