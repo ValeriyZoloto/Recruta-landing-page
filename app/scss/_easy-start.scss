@@ -1,0 +1,94 @@
+.easy-start {
+  padding: 74px 0 0 0;
+  text-align: center;
+
+  &__title {
+    margin-bottom: 42px;
+  }
+
+  &__list {
+    margin: 0px auto 0 106px;
+    min-height: 502px;
+    display: grid;
+    grid-gap: 16px;
+    grid-template-columns: 296px repeat(2, 1fr);
+
+    max-width: 952px;
+  }
+
+  &__item {
+    background-color: $white;
+    box-shadow: 0px 4px 100px rgba(208, 218, 227, 0.57);
+    border-radius: 20px;
+    text-align: left;
+
+    &:nth-child(1) {
+      height: 243px;
+    }
+
+    &:nth-child(2) {
+      grid-row: span 2;
+    }
+
+    &:nth-child(3) {
+      height: 366px;
+    }
+
+    &:nth-child(4) {
+      margin-top: -123px;
+      height: 243px;
+    }
+  }
+
+  &__link {
+    min-height: 100%;
+    display: block;
+    border: 2px solid transparent;
+    padding: 30px;
+    transition: border 0.5s;
+
+    &:hover {
+      border: 2px solid #4917E8;
+      border-radius: 20px;
+    }
+
+    &--mar {
+      padding: 40px;
+    }
+  }
+
+  &__num {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid $default;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @extend %GothamPro-700;
+    margin-bottom: 16px;
+  }
+
+  &__item-title {
+    font-size: 16px;
+    line-height: 2.25;
+    margin-bottom: 4px;
+  }
+
+  &__item-text {
+    max-width: 232px;
+  }
+
+  &__img {
+    margin: 30px 0px 33px 0px;
+
+    &--top {
+      margin: 0px 0px 13px 3px;
+    }
+  }
+
+  &__btn {
+    margin-top: 19px;
+    padding: 16px 21px;
+  }
+}
