@@ -1,5 +1,5 @@
 .tariffs {
-  padding: 41px 0px 144px 0px;
+  padding: 44px 0px 142px 0px;
 
   &__inner {
     text-align: center;
@@ -13,19 +13,19 @@
 
   &__subtitle {
     display: block;
-    margin-bottom: 32px;
+    margin-bottom: 30px;
   }
 
   &__period {
-    margin: 0 auto 32px 377px;
-    max-width: 238px;
+    margin: 0 auto 32px 384px;
+    max-width: 234px;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
   &__btn {
-    padding: 10px 28px;
+    padding: 8px 28px 10px 27px;
     font-size: 20px;
     line-height: 1.5;
   }
@@ -64,7 +64,7 @@
     }
 
     .card__details {
-      margin: 12px 0 13px 2px;
+      margin: 12px 0 12px 2px;
 
       &--mt {
         margin: 35px 0 13px 2px;
@@ -202,6 +202,8 @@
   }
 
   &__big {
+    padding: 50px 48px 48px 48px;
     margin-bottom: 32px;
+
   }
 }

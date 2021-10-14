@@ -101,6 +101,24 @@ a {
   justify-content: flex-start;
   align-items: center;
 
+  @include media-w($sm) {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0px;
+    transform: translateY(-200%);
+    flex-direction: column;
+    align-items: center;
+    background-color: $accent-light;
+    text-align: center;
+    transition: transform 0.5s;
+    z-index: 2;
+    height: 100vh;
+    overflow: scroll;
+
+
+  }
+
   &__item {
     &:first-child {
       margin-left: -5px;
@@ -122,6 +140,10 @@ a {
     color: #000000;
     transition: 0.5s;
 
+    @include media-w($sm) {
+      color: $white;
+    }
+
     &:focus {
       box-shadow: 0px 10px 40px 0px rgb(162 162 162 / 50%);
     }
@@ -135,6 +157,10 @@ a {
     }
 
   }
+}
+
+.menu--active {
+  transform: translateY(0);
 }
 
 .social {
@@ -165,5 +191,66 @@ a {
     width: 18px;
     height: 18px;
   }
+}
 
+.burger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 7px;
+  border: 1px solid transparent;
+  position: relative;
+  z-index: 15;
+  background-color: $line;
+  display: none;
+
+  @include media-w($sm) {
+    display: flex;
+  }
+
+  &__span {
+    width: 22px;
+    height: 2px;
+    background-color: #4614e8;
+    border-radius: 1px;
+    display: block;
+    position: relative;
+    transition: transform 0.5s;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 22px;
+      height: 2px;
+      background-color: #4614e8;
+      border-radius: 1px;
+      left: 0;
+      transition: transform 0.5s;
+    }
+
+    &::before {
+      top: 5px;
+    }
+
+    &::after {
+      bottom: 5px;
+    }
+  }
+}
+
+.burger--active .burger__span {
+  background-color: transparent;
+}
+
+.burger--active .burger__span::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.burger--active .burger__span::after {
+  transform: rotate(-45deg);
+  bottom: 0;
 }

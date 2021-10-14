@@ -41,7 +41,16 @@
           <a class="header__tel" href="tel:88005113768">
             8 (800) 511-37-68
           </a>
-          <button class="btn" type="button">Войти</button>
+          <picture class="header__tel-picture">
+            <source srcset="images/header/smartfone.webp" type="image/webp">
+            <source srcset="images/header/smartfone.png" type="image/png">
+            <img class="header__tel-img" src="images/header/smartfone.webp">
+          </picture>
+          <button class="btn header__btn" type="button">Войти</button>
+          <button class="burger" type="button">
+            <span class="burger__span"></span>
+            <span class="sr-only">Для открытия навигационного меню </span>
+          </button>
         </div>
       </div>
       <nav class="header__bottom">

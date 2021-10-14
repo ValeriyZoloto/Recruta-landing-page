@@ -11,13 +11,13 @@
 
   &__inner {
     padding-top: 86px;
-    max-width: 1048px;
+    max-width: 1042px;
     margin: 0px auto;
   }
 
   &__title {
     color: $white;
-    margin-bottom: 15px;
+    margin-bottom: 14px;
   }
 
   &__earnings {
@@ -31,7 +31,7 @@
   }
 
   &__list {
-    margin: 0 auto 32px;
+    margin: 0 auto 31px;
     max-width: 1062px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -39,7 +39,7 @@
   }
 
   &__item {
-    padding: 53px 186px 48px 109px;
+    padding: 56px 186px 48px 109px;
     border: 1px solid transparent;
     background-color: $white;
     border-radius: 20px;

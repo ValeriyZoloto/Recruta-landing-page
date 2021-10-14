@@ -2,8 +2,8 @@
   padding: 95px 0 48px 0;
 
   &__top {
-    max-width: 937px;
-    margin-left: 109px;
+    max-width: 932px;
+    margin-left: 114px;
     margin-right: auto;
     display: flex;
     justify-content: space-between;
@@ -21,11 +21,11 @@
   }
 
   &__logo {
-    margin-bottom: 32px;
+    margin: -10px 0px 29px 0px;
   }
 
   &__title {
-    margin-bottom: 26px;
+    margin-bottom: 19px;
   }
 
   &__cards {
@@ -102,7 +102,7 @@
     &:first-child {
       position: relative;
       height: 135px;
-      padding: 19px 24px 24px 26px;
+      padding: 19px 24px 24px 29px;
       width: 179px;
       margin-right: 26px;
 
@@ -121,7 +121,7 @@
     }
 
     &:nth-child(2) {
-      padding: 32px 29px 32px 32px;
+      padding: 29px 29px 32px 34px;
       width: 192px;
       height: 171px;
 
@@ -151,7 +151,7 @@
       @extend %GothamPro-700;
       font-size: 48px;
       line-height: 1;
-      margin-bottom: 12px;
+      margin-bottom: 11px;
     }
 
     &--second {
@@ -167,14 +167,14 @@
       font-size: 36px;
       line-height: 1.2;
       display: block;
-      margin-bottom: 7px;
+      margin-bottom: 6px;
     }
 
     &--fours {
       @extend %ArtegraSans-800;
       font-size: 16px;
-      line-height: 44px;
-      letter-spacing: 0.17em;
+      line-height: 46px;
+      letter-spacing: 0.29em;
     }
   }
 
@@ -223,6 +223,18 @@
       border: 1px solid $accent-light;
       box-shadow: 0px 4px 100px rgba(132, 186, 233, 0.57);
     }
+
+    &:first-child {
+      padding: 32px 32px 32px 32px;
+    }
+
+    &:nth-child(2) {
+      padding: 32px 33px 32px 39px;
+    }
+
+    &:nth-child(3) {
+      padding: 32px 32px 32px 44px;
+    }
   }
 
   &__bottom-img {
@@ -234,6 +246,7 @@
   &__bottom-name {
     @extend %GothamPro-700;
     color: $title;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
+    letter-spacing: 2px;
   }
 }
