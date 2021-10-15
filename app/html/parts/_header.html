@@ -16,7 +16,7 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header" id="header">
     <div class="container">
       <div class="header__top">
         <div class="header__left">
@@ -41,11 +41,13 @@
           <a class="header__tel" href="tel:88005113768">
             8 (800) 511-37-68
           </a>
-          <picture class="header__tel-picture">
-            <source srcset="images/header/smartfone.webp" type="image/webp">
-            <source srcset="images/header/smartfone.png" type="image/png">
-            <img class="header__tel-img" src="images/header/smartfone.webp">
-          </picture>
+          <a class="header__tel-hide" href="tel:88005113768">
+            <picture class="header__tel-picture">
+              <source srcset="images/header/smartfone.webp" type="image/webp">
+              <source srcset="images/header/smartfone.png" type="image/png">
+              <img class="header__tel-img" src="images/header/smartfone.webp">
+            </picture>
+          </a>
           <button class="btn header__btn" type="button">Войти</button>
           <button class="burger" type="button">
             <span class="burger__span"></span>
@@ -56,27 +58,27 @@
       <nav class="header__bottom">
         <ul class="menu">
           <li class="menu__item">
-            <a class="menu__link" href="#">О компании</a>
+            <a class="menu__link" href="#header">О компании</a>
           </li>
 
           <li class="menu__item">
-            <a class="menu__link" href="#">Услуги</a>
+            <a class="menu__link" href="#team">Услуги</a>
           </li>
 
           <li class="menu__item">
-            <a class="menu__link" href="#">Sirius</a>
+            <a class="menu__link" href="#benefits">Sirius</a>
           </li>
 
           <li class="menu__item">
-            <a class="menu__link" href="#">Тарифы</a>
+            <a class="menu__link" href="#tariffs">Тарифы</a>
           </li>
 
           <li class="menu__item">
-            <a class="menu__link" href="#">FAQ</a>
+            <a class="menu__link" href="#partners">FAQ</a>
           </li>
 
           <li class="menu__item">
-            <a class="menu__link" href="#">Контакты</a>
+            <a class="menu__link" href="#supervisor">Контакты</a>
           </li>
         </ul>
       </nav>

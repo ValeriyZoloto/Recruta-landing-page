@@ -8,6 +8,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include media-w($smx) {
+      padding: 32px 0 48px 0;
+      flex-direction: column;
+    }
   }
 
   &__top-left {
@@ -15,11 +20,28 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include media-w($smx) {
+      flex-direction: column;
+    }
   }
 
   &__logo {
     width: 213px;
     margin-right: 48px;
+
+    @include media-w($smx) {
+      width: 126px;
+      margin-right: 0px;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__logo-img {
+    @include media-w($smx) {
+      width: 51px;
+      height: 37px;
+    }
   }
 
   &__top-text {
@@ -27,6 +49,11 @@
     @extend %GothamPro-400;
     font-size: 12px;
     line-height: 1.66;
+
+    @include media-w($smx) {
+      margin-bottom: 32px;
+      text-align: center;
+    }
   }
 
   &__top-right {
@@ -44,12 +71,23 @@
     justify-content: space-between;
     align-items: center;
     color: $gray;
+
+    @include media-w($smx) {
+      flex-direction: column-reverse;
+    }
   }
 
   &__bottom-copy {
     @extend %GothamPro-400;
     font-size: 12px;
     line-height: 1.66;
+
+    @include media-w($smx) {
+      font-size: 10px;
+      max-width: 250px;
+      text-align: center;
+      line-height: 20px;
+    }
   }
 
   &__bottom-politics {
@@ -60,11 +98,21 @@
     @extend %GothamPro-400;
     font-size: 10px;
     line-height: 2;
+
+    @include media-w($smx) {
+      flex-direction: column;
+      margin-bottom: 32px;
+    }
   }
 
   &__bottom-item {
     &:first-child {
       margin-right: 16px;
+
+      @include media-w($smx) {
+        margin-bottom: 9px;
+        margin-right: 0;
+      }
     }
   }
 }

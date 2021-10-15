@@ -9,19 +9,39 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 44px;
+
+    @include media-w($lg) {
+      flex-direction: column;
+      margin-left: 0;
+      text-align: center;
+      max-width: 100%;
+    }
   }
 
   &__content {
     max-width: 438px;
 
+    @include media-w($lg) {
+      max-width: 100%;
+    }
+
     p {
       line-height: 150%;
       max-width: 405px;
+
+      @include media-w($lg) {
+        max-width: 100%;
+        margin-bottom: 16px;
+      }
     }
   }
 
   &__logo {
     margin: -10px 0px 29px 0px;
+
+    @include media-w($lg) {
+      display: inline-block;
+    }
   }
 
   &__title {
@@ -55,6 +75,10 @@
     transition: 0.5s;
     cursor: pointer;
 
+    @include media-w($sm) {
+      text-align: left;
+    }
+
     &:hover {
       box-shadow: 0px 10px 40px 0px rgb(162 162 162 / 50%);
     }
@@ -63,6 +87,11 @@
       padding: 24px 29px 32px 28px;
       width: 217px;
       margin-right: 25px;
+
+      @include media-w($sm) {
+        padding: 16px 16px 16px 16px;
+        width: 140px;
+      }
     }
 
     &:nth-child(2) {
@@ -70,6 +99,12 @@
       position: relative;
       height: 137px;
       width: 177px;
+
+      @include media-w($sm) {
+        padding: 16px 8px 14px 16px;
+        height: 91px;
+        width: 124px;
+      }
 
       &::after {
         position: absolute;
@@ -82,6 +117,13 @@
         top: -64px;
         right: -129px;
         z-index: -1;
+
+        @include media-w($sm) {
+          width: 102px;
+          height: 102px;
+          top: -40px;
+          right: -53px;
+        }
       }
     }
 
@@ -95,6 +137,10 @@
     transition: 0.5s;
     cursor: pointer;
 
+    @include media-w($sm) {
+      text-align: left;
+    }
+
     &:hover {
       box-shadow: 0px 10px 40px 0px rgb(162 162 162 / 50%);
     }
@@ -105,6 +151,12 @@
       padding: 19px 24px 24px 29px;
       width: 179px;
       margin-right: 26px;
+
+      @include media-w($sm) {
+        padding: 16px 8px 14px 16px;
+        height: 91px;
+        width: 124px;
+      }
 
       &::after {
         position: absolute;
@@ -117,6 +169,13 @@
         top: -12px;
         right: 157px;
         z-index: -1;
+
+        @include media-w($sm) {
+          width: 25px;
+          height: 25px;
+          top: -12px;
+          right: 109px;
+        }
       }
     }
 
@@ -124,6 +183,12 @@
       padding: 29px 29px 32px 34px;
       width: 192px;
       height: 171px;
+
+      @include media-w($sm) {
+        padding: 16px 16px 16px 16px;
+        width: 132px;
+        height: 110px;
+      }
 
       &::after {
         position: absolute;
@@ -152,6 +217,12 @@
       font-size: 48px;
       line-height: 1;
       margin-bottom: 11px;
+
+      @include media-w($sm) {
+        font-size: 32px;
+        line-height: 30px;
+        margin-bottom: 4px;
+      }
     }
 
     &--second {
@@ -160,6 +231,11 @@
       line-height: 1.2;
       display: block;
       margin-bottom: 7px;
+
+      @include media-w($sm) {
+        font-size: 32px;
+        line-height: 30px;
+      }
     }
 
     &--third {
@@ -168,6 +244,11 @@
       line-height: 1.2;
       display: block;
       margin-bottom: 6px;
+
+      @include media-w($sm) {
+        font-size: 32px;
+        line-height: 30px;
+      }
     }
 
     &--fours {
@@ -175,6 +256,11 @@
       font-size: 16px;
       line-height: 46px;
       letter-spacing: 0.29em;
+
+      @include media-w($sm) {
+        font-size: 12px;
+        line-height: 30px;
+      }
     }
   }
 
@@ -182,6 +268,11 @@
     &:first-child {
       font-size: 16px;
       line-height: 1.5;
+
+      @include media-w($sm) {
+        font-size: 10px;
+        line-height: 150%;
+      }
     }
   }
 
@@ -194,12 +285,26 @@
   &__bottom-title {
     @extend %GothamPro-700;
     margin-bottom: 26px;
+
+    @include media-w($sm) {
+      font-size: 14px;
+      margin-bottom: 24px;
+    }
   }
 
   &__bottom-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 16px;
+
+    @include media-w($mdl) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include media-w($smx) {
+      grid-template-columns: repeat(1, 1fr);
+      grid-row-gap: 8px;
+    }
   }
 
   &__bottom-item {
@@ -210,6 +315,21 @@
     border-radius: 10px;
     text-align: left;
     transition: border 0.5s, box-shadow 0.5s;
+
+    @include media-w($lg) {
+      max-width: 280px;
+      height: 281px;
+    }
+
+    @include media-w($mdl) {
+      max-width: 95%;
+      grid-column-gap: 16px;
+    }
+
+    @include media-w($smx) {
+      max-width: 100%;
+      grid-column-gap: 0px;
+    }
 
     &:focus {
       box-shadow: 0px 4px 100px rgba(132, 186, 233, 0.57);
@@ -226,14 +346,32 @@
 
     &:first-child {
       padding: 32px 32px 32px 32px;
+
+      @include media-w($lg) {
+        padding: 24px 24px 24px 24px;
+      }
     }
 
     &:nth-child(2) {
       padding: 32px 33px 32px 39px;
+
+      @include media-w($lg) {
+        padding: 24px 24px 24px 24px;
+      }
     }
 
     &:nth-child(3) {
       padding: 32px 32px 32px 44px;
+
+      @include media-w($lg) {
+        padding: 24px 24px 24px 24px;
+      }
+    }
+
+    p {
+      @include media-w($lg) {
+        font-size: 12px;
+      }
     }
   }
 
@@ -241,6 +379,29 @@
     display: block;
     margin: 0 auto;
     margin-bottom: 16px;
+
+    &--first {
+      @include media-w($lg) {
+        width: 115px;
+        height: 93px;
+      }
+    }
+
+    &--second {
+      @include media-w($lg) {
+        width: 122px;
+        height: 94px;
+      }
+    }
+
+    &--thirt {
+      @include media-w($lg) {
+        width: 119px;
+        height: 94px;
+      }
+    }
+
+
   }
 
   &__bottom-name {
@@ -248,5 +409,12 @@
     color: $title;
     margin-bottom: 12px;
     letter-spacing: 2px;
+  }
+
+  &__card-text {
+    @include media-w($sm) {
+      font-size: 10px;
+      line-height: 150%;
+    }
   }
 }

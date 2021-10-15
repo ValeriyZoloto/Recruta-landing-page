@@ -71,12 +71,46 @@ a {
   justify-content: space-between;
   align-items: center;
 
+  @include media-w($smx) {
+    width: 90px;
+  }
+
   &__text {
     max-width: 88px;
     @extend %Roboto-300;
     font-size: 16px;
     line-height: 1.18;
     color: #3b1d8f;
+
+    @include media-w($smx) {
+      display: block;
+      max-width: 40px;
+      font-size: 7px;
+      line-height: 9px;
+    }
+
+    &--footer {
+      @include media-w($smx) {
+        max-width: 52px;
+        font-size: 9px;
+        line-height: 11px;
+      }
+    }
+  }
+
+  &__img {
+    @include media-w($smx) {
+      width: 39px;
+      height: 30px;
+    }
+
+    &--team {
+      @include media-w($lg) {
+        display: inline-block;
+        width: 54px;
+        height: 40px;
+      }
+    }
   }
 }
 
@@ -127,6 +161,10 @@ a {
 
   &__item:not(:last-child) {
     margin-right: 36px;
+
+    @include media-w($sm) {
+      margin-right: 0;
+    }
   }
 
   &__link {
@@ -177,6 +215,12 @@ a {
     cursor: pointer;
     transition: 0.5s;
 
+    @include media-w($smx) {
+      padding: 10px;
+      width: 45px;
+      height: 45px;
+    }
+
     &:hover {
       border: 2px solid #cfdae7;
       padding: 8px;
@@ -190,6 +234,11 @@ a {
   &__item-svg {
     width: 18px;
     height: 18px;
+
+    @include media-w($smx) {
+      width: 23px;
+      height: 23px;
+    }
   }
 }
 
@@ -208,6 +257,7 @@ a {
 
   @include media-w($sm) {
     display: flex;
+    margin-right: 11px;
   }
 
   &__span {

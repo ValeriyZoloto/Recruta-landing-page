@@ -16,7 +16,7 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header" id="header">
     <div class="container">
       <div class="header__top">
         <div class="header__left">
@@ -41,11 +41,13 @@
           <a class="header__tel" href="tel:88005113768">
             8 (800) 511-37-68
           </a>
-          <picture class="header__tel-picture">
-            <source srcset="images/header/smartfone.webp" type="image/webp">
-            <source srcset="images/header/smartfone.png" type="image/png">
-            <img class="header__tel-img" src="images/header/smartfone.webp">
-          </picture>
+          <a class="header__tel-hide" href="tel:88005113768">
+            <picture class="header__tel-picture">
+              <source srcset="images/header/smartfone.webp" type="image/webp">
+              <source srcset="images/header/smartfone.png" type="image/png">
+              <img class="header__tel-img" src="images/header/smartfone.webp">
+            </picture>
+          </a>
           <button class="btn header__btn" type="button">Войти</button>
           <button class="burger" type="button">
             <span class="burger__span"></span>
@@ -56,27 +58,27 @@
       <nav class="header__bottom">
         <ul class="menu">
           <li class="menu__item">
-            <a class="menu__link" href="#">О компании</a>
+            <a class="menu__link" href="#header">О компании</a>
           </li>
 
           <li class="menu__item">
-            <a class="menu__link" href="#">Услуги</a>
+            <a class="menu__link" href="#team">Услуги</a>
           </li>
 
           <li class="menu__item">
-            <a class="menu__link" href="#">Sirius</a>
+            <a class="menu__link" href="#benefits">Sirius</a>
           </li>
 
           <li class="menu__item">
-            <a class="menu__link" href="#">Тарифы</a>
+            <a class="menu__link" href="#tariffs">Тарифы</a>
           </li>
 
           <li class="menu__item">
-            <a class="menu__link" href="#">FAQ</a>
+            <a class="menu__link" href="#partners">FAQ</a>
           </li>
 
           <li class="menu__item">
-            <a class="menu__link" href="#">Контакты</a>
+            <a class="menu__link" href="#supervisor">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -84,6 +86,195 @@
   </header>
 
   <main class="main">
+<section class="policy">
+  <div class="container">
+    <div class="policy__top">
+      <div class="policy__content">
+        <h1 class="policy__title">
+          <span class="policy__title-span">Юридический полис ILC —</span>
+          <span class="policy__title-span">быстрое решение сложных</span>
+          <span class="policy__title-span">вопросов 24/7</span>
+          <span class="policy__title-span policy__title-span--hide">Юридический</span>
+          <span class="policy__title-span policy__title-span--hide">
+            полис ILC — быстрое
+          </span>
+          <span class="policy__title-span policy__title-span--hide">решение сложных</span>
+          <span class="policy__title-span policy__title-span--hide">вопросов 24/7</span>
+        </h1>
+        <p>
+          Ваша личная команда профессиональных юристов, которая всегда под рукой. А также
+          доступ к бонусам партнерской программы — доход
+          до $260 с каждого полиса, купленного по вашему приглашению.
+        </p>
+        <button class="btn policy__btn" type="button">Попробовать бесплатно</button>
+      </div>
+      <div class="policy__drawing">
+        <picture class="policy__picture">
+          <source srcset="images/policy/income.webp" type="image/webp">
+          <source srcset="images/policy/income.png" type="image/png">
+          <img class="policy__img" src="images/policy/income.webp" width="438"
+            height="562" alt="Доход с каждого полиса">
+        </picture>
+        <div class="policy__drawing-text">
+          <span class="policy__drawing-income">Доход</span>
+          <span class="policy__drawing-summ">до <span
+              class="policy__drawing-currency">$260</span>
+          </span>
+          <span class="policy__drawing-each policy__drawing-each--first">с каждого</span>
+          <span class="policy__drawing-each">полиса</span>
+        </div>
+      </div>
+    </div>
+    <div class="policy__bottom">
+      <ul class="policy__list">
+        <li class="policy__item">
+          <a class="policy__link" href="#">
+            Юридическая поддержка 24/7
+          </a>
+        </li>
+
+        <li class="policy__item">
+          <a class="policy__link" href="#">
+            Множество возможностей в одном полисе
+          </a>
+        </li>
+
+        <li class="policy__item">
+          <a class="policy__link" href="#">
+            Бонусы партнерской программы
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="team" id="team">
+  <div class="container">
+    <div class="team__top">
+      <div class="team__content">
+        <a class="logo team__logo" href="index.html">
+          <picture class="logo__picture">
+            <source srcset="images/logo/logo.webp" type="image/webp">
+            <source srcset="images/logo/logo.png" type="image/png">
+            <img class="logo__img logo__img--team" src="images/logo/logo.webp" width="85"
+              height="59" alt="Логотип ком">
+          </picture>
+        </a>
+
+        <h2 class="title  team__title">
+          Ваша личная online команда юристов
+        </h2>
+
+        <p>
+          Мы предоставляем комплексный консалтинговый сервис с полисной системой
+          обслуживания для частных клиентов и для бизнеса, с использованием новейших
+          цифровых технологий.
+        </p>
+      </div>
+
+      <div class="team__cards">
+        <ul class="team__row">
+          <li class="team__card">
+            <span class="team__card-label team__card-label--first">
+              100+ <span class="team__card-litle">тыс</span>
+            </span>
+            <p class="team__card-text">
+              Клиентов <br>
+              по всему миру
+            </p>
+          </li>
+
+          <li class="team__card">
+            <span class="team__card-label team__card-label--second">
+              15 <span class="team__card-litle">лет</span>
+            </span>
+            <p class="team__card-text">
+              Опытных <br>
+              юристов в штате
+            </p>
+          </li>
+        </ul>
+
+        <ul class="team__row-second">
+          <li class="team__card-second">
+            <span class="team__card-label team__card-label--third">
+              50+
+            </span>
+            <p class="team__card-text">
+              Опытных <br>
+              юристов в штате
+            </p>
+          </li>
+
+          <li class="team__card-second">
+            <span class="team__card-label team__card-label--fours">
+              SIRIUS
+            </span>
+            <p class="team__card-text">
+              Система на базе<br>
+              искусственного <br>
+              интеллекта
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="team__bottom">
+      <h3 class="team__bottom-title">Даём поддержку</h3>
+      <ul class="team__bottom-list">
+        <li class="team__bottom-item">
+          <a class="team__bottom-link" href="#">
+            <picture class="team__bottom-picture">
+              <source srcset="images/team/team1.webp" type="image/webp">
+              <source srcset="images/team/team1.png" type="image/png">
+              <img class="team__bottom-img team__bottom-img--first"
+                src="images/team/team1.webp" width="159" height="128">
+            </picture>
+            <h4 class="team__bottom-name">Бизнесу</h4>
+            <p>
+              Услуги профессиональных юристов для вашей компании по фиксированному тарифу
+              —
+              это в несколько раз выгоднее, чем содержать свой штат.
+            </p>
+          </a>
+        </li>
+
+        <li class="team__bottom-item">
+          <a class="team__bottom-link" href="#">
+            <picture class="team__bottom-picture">
+              <source srcset="images/team/team2.webp" type="image/webp">
+              <source srcset="images/team/team2.png" type="image/png">
+              <img class="team__bottom-img team__bottom-img--second"
+                src="images/team/team2.webp" width="166" height="129">
+            </picture>
+            <h4 class="team__bottom-name ">StartUP проектам</h4>
+            <p>
+              Эксперты ILC помогут выбрать оптимальную правовую форму
+              для ведения бизнеса, оптимизировать налоги и подготовить необходимый пакет
+              документов.
+            </p>
+          </a>
+        </li>
+
+        <li class="team__bottom-item">
+          <a class="team__bottom-link" href="#">
+            <picture class="team__bottom-picture">
+              <source srcset="images/team/team3.webp" type="image/webp">
+              <source srcset="images/team/team3.png" type="image/png">
+              <img class="team__bottom-img team__bottom-img--thirt"
+                src="images/team/team3.webp" width="161" height="128">
+            </picture>
+            <h4 class="team__bottom-name">Частным клиентам</h4>
+            <p>
+              Оперативные решения сложных вопросов в режиме онлайн: ДТП, наследство,
+              страховые споры, земельные и имущественные процессы, защита прав.
+            </p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
 
 
 
@@ -96,10 +287,10 @@
           <picture class="logo__picture">
             <source srcset="images/logo/logo.webp" type="image/webp">
             <source srcset="images/logo/logo.png" type="image/png">
-            <img class="logo__img" src="images/logo/logo.webp" width="88" height="63"
-              alt="Логотип ком">
+            <img class="logo__img footer__logo-img" src="images/logo/logo.webp" width="88"
+              height="63" alt="Логотип ком">
           </picture>
-          <div class="logo__text">
+          <div class="logo__text logo__text--footer">
             International
             Legal Center
           </div>
