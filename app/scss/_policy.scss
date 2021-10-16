@@ -1,6 +1,10 @@
 .policy {
   padding: 0px 0 92px 0;
 
+  @include media-w($smm) {
+    padding: 0;
+  }
+
   &__top {
     max-width: 1200px;
     display: flex;
@@ -213,6 +217,7 @@
     }
 
     @include media-w($smm) {
+      padding: 39px 28px 22px 28px;
       margin-top: 45px;
     }
   }
@@ -231,13 +236,20 @@
     position: relative;
     padding-top: 40px;
 
+    &:last-child {
+      @include media-w($smm) {
+        margin-bottom: 0;
+      }
+    }
+
     @include media-w($md) {
       margin-bottom: 24px;
       text-align: center;
     }
 
     @include media-w($smm) {
-      padding-top: 46px;
+      padding-top: 44px;
+      margin-right: 6px;
     }
 
     &::before {

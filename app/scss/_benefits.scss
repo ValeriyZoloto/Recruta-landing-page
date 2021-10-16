@@ -1,15 +1,29 @@
 .benefits {
   padding: 90px 0 96px 0;
 
+  @include media-w($smm) {
+    text-align: center;
+    padding: 21px 0 27px 0;
+
+  }
+
   &__title {
     margin: 0px 0px 33px -36px;
     text-align: center;
+
+    @include media-w($smm) {
+      margin: 0px 0px 33px -6px;
+    }
   }
 
   &__top {
     max-width: 1111px;
     margin: 0 auto;
     display: flex;
+
+    @include media-w($lg) {
+      flex-direction: column;
+    }
   }
 
   &__tel {
@@ -20,6 +34,11 @@
   &__img {
     position: relative;
     z-index: -1;
+
+    @include media-w($smx) {
+      width: 164px;
+      height: 284px;
+    }
   }
 
   &__question {
@@ -32,6 +51,19 @@
     top: -10px;
     right: -50px;
     padding: 17px 19px 18px 22px;
+
+    @include media-w($lg) {
+      top: 14px;
+      left: 133px;
+    }
+
+    @include media-w($smx) {
+      padding: 16px 4px 16px 4px;
+      width: 138px;
+      height: 84px;
+      top: -5px;
+      left: 96px;
+    }
   }
 
   &__ask {
@@ -40,6 +72,11 @@
     line-height: 1.3;
     color: $black;
     margin-bottom: 7px;
+
+    @include media-w($smx) {
+      font-size: 10px;
+      line-height: 16px;
+    }
   }
 
   &__btn {
@@ -49,12 +86,24 @@
     font-size: 12px;
     margin-left: -4px;
     border-radius: 7px;
+
+    @include media-w($smx) {
+      padding: 8px;
+      width: 116px;
+      height: 32px;
+      font-size: 10px;
+      line-height: 14px;
+    }
   }
 
   &__sirius {
     margin-right: 31px;
     max-width: 438px;
     padding-top: 17px;
+
+    @include media-w($smx) {
+      text-align: left
+    }
   }
 
   &__sirius-title {
@@ -65,6 +114,19 @@
     color: #34449C;
     margin: 0px 0px 0px 3px;
     text-transform: uppercase;
+
+    @include media-w($smx) {
+      font-size: 14px;
+      line-height: 44px;
+      margin: 12px 0px 0px 2px;
+    }
+  }
+
+  &__sirius-list {
+    @include media-w($smx) {
+      font-size: 12px;
+      line-height: 150%;
+    }
   }
 
   &__sirius-item {
@@ -81,6 +143,14 @@
 
   &__schedule-list {
     padding: 61px 0px 0px 40px;
+
+    @include media-w($smx) {
+      text-align: left;
+      padding: 22px 0px 0px 0px;
+      font-size: 12px;
+      line-height: 150%;
+    }
+
   }
 
   &__schedule-item {
@@ -101,17 +171,48 @@
 
   &__schedule-item:not(:last-child) {
     margin-bottom: 23px;
+
+    @include media-w($smx) {
+      margin-bottom: 16px;
+    }
   }
 
   &__bottom {
     margin-top: -71px;
     max-width: 1272px;
+
+    @include media-w($lg) {
+      margin-top: 50px;
+    }
+
+    @include media-w($smx) {
+      max-width: 100%;
+    }
   }
 
   &__bottom-list {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-row-gap: 19px;
+
+    @include media-w($sxla) {
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 16px;
+    }
+
+    @include media-w($md) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include media-w($sm) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 8px;
+    }
+
+    @include media-w($smx) {
+      grid-template-columns: repeat(1, 1fr);
+      grid-row-gap: 8px;
+    }
   }
 
   &__bottom-item {
@@ -121,6 +222,45 @@
     border-radius: 20px;
     border: 2px solid transparent;
     transition: box-shadow 0.5s, border 0.5s;
+
+    @include media-w($sxla) {
+      max-width: 100%;
+    }
+
+    @include media-w($smx) {
+      height: 280px;
+    }
+
+    &:nth-child(2) {
+      @include media-w($smx) {
+        height: 267px;
+      }
+    }
+
+    &:nth-child(3) {
+      @include media-w($smx) {
+        height: 271px;
+      }
+    }
+
+    &:nth-child(4) {
+      @include media-w($smx) {
+        height: 252px;
+      }
+    }
+
+    &:nth-child(5) {
+      @include media-w($smx) {
+        height: 272px;
+      }
+    }
+
+    p {
+      @include media-w($smx) {
+        font-size: 12px;
+        line-height: 150%;
+      }
+    }
 
     &:focus {
       box-shadow: 0px 4px 100px rgba(87, 141, 187, 0.57);
@@ -142,6 +282,11 @@
     padding: 28px 32px 32px 27px;
     transition: box-shadow 0.5s, border 0.5s;
 
+    @include media-w($smx) {
+      text-align: left;
+      padding: 25px 25px 25px 25px;
+    }
+
   }
 
   &__bottom-img {
@@ -154,6 +299,11 @@
     font-size: 16px;
     line-height: 1.25;
 
+    @include media-w($smx) {
+      font-size: 14px;
+      line-height: 20px;
+    }
+
     &--one {
       margin: -3px 0 16px 3px;
       max-width: 81px;
@@ -162,6 +312,11 @@
     &--two {
       margin: -3px 0 16px 3px;
       max-width: 94px;
+
+      @include media-w($smx) {
+        margin: 30px 0 17px 3px;
+      }
+
     }
 
     &--three {
