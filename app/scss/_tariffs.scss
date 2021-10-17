@@ -9,6 +9,10 @@
 
   &__title {
     margin-bottom: 10px;
+
+    @include media-w($smx) {
+      margin: 0px 0px 10px -9px;
+    }
   }
 
   &__subtitle {
@@ -18,7 +22,7 @@
     @include media-w($smx) {
       font-size: 12px;
       line-height: 150%;
-      margin-bottom: 15px;
+      margin: 0px 0px 15px -12px;
     }
   }
 
@@ -70,6 +74,10 @@
     @include media-w($sm) {
       grid-template-columns: repeat(1, 1fr);
     }
+
+    @include media-w($smx) {
+      grid-gap: 8px;
+    }
   }
 
   &__card {
@@ -77,28 +85,52 @@
     text-align: left;
 
     @include media-w($smx) {
+      padding: 22px 19px 24px 28px !important;
       text-align: center;
+    }
+
+    @include media-w($xxs) {
+      height: 537px;
     }
 
     .card__title {
       margin-bottom: 22px;
 
+      @include media-w($smx) {
+        margin-bottom: 5px;
+      }
     }
 
     .card__for {
       margin-bottom: 17px;
+
+      @include media-w($smx) {
+        margin: 0px 0px 17px -19px;
+      }
     }
 
     .card__access {
       margin-bottom: 12px;
+
+      @include media-w($smx) {
+        margin: 0px 0px 12px -19px;
+      }
     }
 
     .card__position {
       margin-top: 15px;
+
+      @include media-w($smx) {
+        margin: 6px 0px 0px 3px;
+      }
     }
 
     .card__details {
       margin: 12px 0 12px 2px;
+
+      @include media-w($smx) {
+        margin: 14px 0 -3px -16px;
+      }
 
       &--mt {
         margin: 35px 0 13px 2px;
@@ -122,7 +154,7 @@
     @include media-w($smx) {
       font-size: 12px;
       line-height: 30px;
-      margin-bottom: 7px;
+      margin: 0px 0px 7px -13px;
     }
   }
 
@@ -135,7 +167,7 @@
     @include media-w($smx) {
       font-size: 18px;
       line-height: 44px;
-      margin: -8px 0 3px 0;
+      margin: -8px 0 3px -13px;
     }
   }
 
@@ -159,7 +191,7 @@
     @include media-w($smx) {
       font-size: 14px;
       line-height: 30px;
-      margin-bottom: 9px;
+      margin: 0px 0px 9px -13px;
     }
   }
 
@@ -208,6 +240,7 @@
 
     @include media-w($smx) {
       font-size: inherit;
+      margin: -2px 0 0 6px;
     }
 
     &::before {
@@ -218,14 +251,30 @@
       background-image: url(../images/benefits/triangle.svg);
       top: 16px;
       left: -2px;
+
+      @include media-w($smx) {
+        top: 12px;
+        left: -8px;
+      }
     }
 
     &--height {
       margin-top: 8px;
       line-height: 1.5;
 
+      @include media-w($smx) {
+        margin-top: 1px;
+        font-size: 12px;
+        line-height: 20px;
+      }
+
       &::before {
         top: 9px;
+
+        @include media-w($smx) {
+          top: 6px;
+          left: -8px;
+        }
       }
     }
   }
@@ -244,6 +293,7 @@
     @include media-w($smx) {
       font-size: 12px;
       line-height: 40px;
+      margin: -3px 0px -3px -13px;
     }
 
     &::after {
@@ -278,6 +328,13 @@
       height: 16px;
       background-image: url(../images/benefits/chat/arrow-right.svg);
       @extend %bg-center-cover;
+
+      @include media-w($smx) {
+        width: 13px;
+        height: 12px;
+        top: 19px;
+        right: 25px;
+      }
     }
 
   }
@@ -291,6 +348,7 @@
       line-height: 18px;
       width: 220px;
       height: 50px;
+      margin: 0px 0px 0px -13px;
     }
   }
 
@@ -303,7 +361,12 @@
     }
 
     @include media-w($smx) {
-      padding: 22px 19px 24px 23px;
+      padding: 22px 19px 25px 23px;
+      margin-bottom: 9px;
+    }
+
+    @include media-w($xxs) {
+      // max-width: 280px;
     }
 
   }
