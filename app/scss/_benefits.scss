@@ -12,7 +12,8 @@
     text-align: center;
 
     @include media-w($smm) {
-      margin: 0px 0px 33px -6px;
+      margin: 0px 0px 22px 2px;
+      max-width: 280px;
     }
   }
 
@@ -37,7 +38,7 @@
 
     @include media-w($smx) {
       width: 164px;
-      height: 284px;
+      height: 302px;
     }
   }
 
@@ -61,7 +62,7 @@
       padding: 16px 4px 16px 4px;
       width: 138px;
       height: 84px;
-      top: -5px;
+      top: 6px;
       left: 96px;
     }
   }
@@ -102,7 +103,8 @@
     padding-top: 17px;
 
     @include media-w($smx) {
-      text-align: left
+      text-align: left;
+      padding-top: 11px;
     }
   }
 

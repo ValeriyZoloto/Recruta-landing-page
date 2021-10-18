@@ -1,6 +1,10 @@
 .tariffs {
   padding: 44px 0px 142px 0px;
 
+  @include media-w($xxs) {
+    padding: 44px 0px 74px 0px;
+  }
+
   &__inner {
     text-align: center;
     max-width: 1062px;
@@ -87,10 +91,6 @@
     @include media-w($smx) {
       padding: 22px 19px 24px 28px !important;
       text-align: center;
-    }
-
-    @include media-w($xxs) {
-      height: 537px;
     }
 
     .card__title {
