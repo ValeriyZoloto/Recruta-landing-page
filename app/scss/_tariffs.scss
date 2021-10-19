@@ -13,6 +13,7 @@
 
   &__title {
     margin-bottom: 10px;
+    @include overflow($row);
 
     @include media-w($smx) {
       margin: 0px 0px 10px -9px;
@@ -22,6 +23,7 @@
   &__subtitle {
     display: block;
     margin-bottom: 30px;
+    @include overflow($row);
 
     @include media-w($smx) {
       font-size: 12px;
@@ -95,6 +97,8 @@
 
     .card__title {
       margin-bottom: 22px;
+      max-width: 400px;
+      @include overflow($row);
 
       @include media-w($smx) {
         margin-bottom: 5px;
@@ -150,6 +154,7 @@
     letter-spacing: 0.15em;
     color: $accent-light;
     margin-bottom: 16px;
+    @include overflow($row);
 
     @include media-w($smx) {
       font-size: 12px;
@@ -163,6 +168,7 @@
     color: $silver;
     font-size: 32px;
     line-height: 1.37;
+    @include overflow($row);
 
     @include media-w($smx) {
       font-size: 18px;
@@ -174,6 +180,7 @@
   &__for {
     margin-bottom: 23px;
     color: #737373;
+    @include overflow($row);
 
     @include media-w($smx) {
       font-size: 12px;
@@ -187,6 +194,7 @@
     line-height: 1.87;
     color: $default;
     margin-bottom: 13px;
+    @include overflow($row);
 
     @include media-w($smx) {
       font-size: 14px;
@@ -201,7 +209,7 @@
 
     @include media-w($mdb) {
       flex-direction: column;
-      align-items: center;
+      align-items: left;
     }
 
     @include media-w($smx) {
@@ -237,6 +245,7 @@
     font-size: 16px;
     line-height: 2.5;
     text-align: left;
+    @include overflow($row);
 
     @include media-w($smx) {
       font-size: inherit;
@@ -261,6 +270,7 @@
     &--height {
       margin-top: 8px;
       line-height: 1.5;
+      @include overflow($row-2);
 
       @include media-w($smx) {
         margin-top: 1px;
@@ -289,10 +299,18 @@
     line-height: 2.5;
     color: $accent-light;
     transition: box-shadow 0.5s;
+    @include overflow($row);
+
+    @include media-w($mdb) {
+      margin: 0px 0px 11px;
+    }
 
     @include media-w($smx) {
       font-size: 12px;
       line-height: 40px;
+    }
+
+    @include media-w($xs) {
       margin: -3px 0px -3px -13px;
     }
 
@@ -309,6 +327,10 @@
 
     &:hover::after {
       width: 100%;
+
+      @include media-w($smx) {
+        width: 0px;
+      }
     }
 
     &:focus {
@@ -357,6 +379,10 @@
     margin-bottom: 32px;
 
     @include media-w($mdb) {
+      text-align: left;
+    }
+
+    @include media-w($smx) {
       text-align: center;
     }
 
@@ -364,10 +390,5 @@
       padding: 22px 19px 25px 23px;
       margin-bottom: 9px;
     }
-
-    @include media-w($xxs) {
-      // max-width: 280px;
-    }
-
   }
 }

@@ -30,8 +30,6 @@
       height: 312px;
       margin-top: -165px;
     }
-
-
   }
 
   &__drawing {
@@ -142,6 +140,7 @@
 
   &__title-span {
     display: block;
+    @include overflow($row);
 
     @include media-w($smm) {
       display: none;
@@ -161,6 +160,8 @@
         display: block;
         margin-bottom: 4px;
         margin-right: 15px;
+        max-width: 275px;
+        @include overflow($row);
       }
     }
   }
@@ -177,6 +178,7 @@
     & p {
       max-width: 547px;
       margin-bottom: 43px;
+      @include overflow($row-5);
 
       @include media-w($md) {
         font-size: 12px;
@@ -321,6 +323,7 @@
   &__link {
     display: block;
     transition: box-shadow 0.5s;
+    @include overflow($row-3);
 
     @include media-w($smm) {
       max-width: 216px;

@@ -8,6 +8,7 @@
 
   &__title {
     margin-bottom: 42px;
+    @include overflow($row);
 
     @include media-w($smx) {
       margin-bottom: 27px;
@@ -111,6 +112,10 @@
 
     &--mar {
       padding: 38px;
+
+      @include media-w($xs) {
+        padding: 34px;
+      }
     }
   }
 
@@ -130,6 +135,7 @@
     font-size: 16px;
     line-height: 2.25;
     margin-bottom: 9px;
+    @include overflow($row);
 
     @include media-w($smx) {
       font-size: 14px;
@@ -140,6 +146,7 @@
 
   &__item-text {
     max-width: 232px;
+    @include overflow($row-5);
 
     @include media-w($smx) {
       font-size: 12px;
@@ -211,6 +218,7 @@
     font-size: 32px;
     line-height: 1.37;
     color: $white;
+    @include overflow($row-3);
 
     @include media-w($smx) {
       font-size: 24px;
@@ -232,7 +240,6 @@
       flex-wrap: wrap;
       align-items: flex-start;
     }
-
   }
 
   &__point {
@@ -283,6 +290,7 @@
     line-height: 1.5;
     text-align: center;
     margin-bottom: 6px;
+    @include overflow($row);
 
     @include media-w($smx) {
       font-size: 24px;
@@ -319,6 +327,7 @@
     margin: 0px auto;
     text-align: center;
     color: $white;
+    @include overflow($row-3);
 
     @include media-w($smx) {
       font-size: 12px;

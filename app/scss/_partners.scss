@@ -25,7 +25,6 @@
 
     @include media-w($smm) {
       padding: 45px 0 120px 0;
-
     }
   }
 
@@ -44,13 +43,13 @@
     max-width: 309px;
     font-size: 16px;
     color: $white-light;
+    @include overflow($row-3);
 
     @include media-w($smx) {
       display: inline-block;
       max-width: 274px;
       font-size: 12px;
       line-height: 150%;
-
     }
   }
 
@@ -194,6 +193,7 @@
     margin: -7px 0px 7px 0px;
     font-size: 16px;
     line-height: 2.25;
+    @include overflow($row);
 
     @include media-w($smx) {
       margin: -7px 0px 13px -6px;
@@ -229,16 +229,22 @@
   &__item-text {
     line-height: 1.4;
     margin-bottom: 11px;
+    @include overflow($row-3);
 
     @include media-w($smx) {
       font-size: 12px;
       line-height: 20px;
+    }
+
+    strong {
+      @include overflow($row);
     }
   }
 
   &__item-text--light {
     color: $gray;
     margin-bottom: 0;
+    @include overflow($row-3);
 
     @include media-w($smx) {
       font-size: 12px;

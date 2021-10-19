@@ -5,6 +5,10 @@
     padding: 72px 0 148px 0;
   }
 
+  &__text {
+    @include overflow($row-3);
+  }
+
   &__inner {
     margin: 0px auto 0 111px;
     max-width: 985px;
@@ -61,6 +65,16 @@
     line-height: 1.3;
     color: $title;
 
+    @include media-w($smx) {
+      bottom: -28px;
+      right: -40px;
+    }
+
+    @include media-w($sms) {
+      bottom: -28px;
+      right: 0px;
+    }
+
     @include media-w($xxs) {
       bottom: -42px;
       right: -84px;
@@ -69,6 +83,10 @@
       height: 106px;
       font-size: 11px;
       line-height: 16px;
+    }
+
+    p {
+      @include overflow($row-3);
     }
   }
 
@@ -100,14 +118,16 @@
 
   &__title {
     margin-bottom: 8px;
+    @include overflow($row);
 
     @include media-w($smx) {
       margin-bottom: 17px;
     }
-
   }
 
   &__boss {
+    @include overflow($row);
+
     @include media-w($smm) {
       font-size: 12px;
       line-height: 20px;
@@ -117,6 +137,7 @@
   &__manager {
     @extend %GothamPro-500;
     margin-bottom: 32px;
+    @include overflow($row);
 
     @include media-w($smm) {
       font-size: 12px;
@@ -126,13 +147,14 @@
   }
 
   &__text {
+    @include overflow($row-3);
+
     @include media-w($smm) {
       text-align: left;
       font-size: 12px;
       line-height: 20px;
       margin-left: 7px;
     }
-
   }
 
   &__list {
@@ -162,6 +184,7 @@
 
   &__tex {
     margin-bottom: 33px;
+    @include overflow($row-3);
 
     @include media-w($mdb) {
       text-align: left;

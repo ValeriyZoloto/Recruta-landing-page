@@ -19,13 +19,6 @@ body {
   background-color: $bg;
 }
 
-a {
-  // color: $default;
-  // font-size: 16px;
-  // line-height: 1.6;
-  // @extend %quicksand-500;
-}
-
 .main {
   flex-grow: 1;
 }
@@ -54,6 +47,7 @@ a {
   font-size: 32px;
   line-height: 1.37;
   color: $title;
+  @include overflow($row-3);
 
   @include media-w($smm) {
     font-size: 24px;
@@ -111,6 +105,7 @@ a {
 }
 
 .btn {
+  display: inline-block;
   @extend %btn;
 
   &:focus {
@@ -146,7 +141,6 @@ a {
     height: 100vh;
     overflow: scroll;
 
-
   }
 
   &__item {
@@ -173,6 +167,7 @@ a {
     letter-spacing: 0.03em;
     color: #000000;
     transition: 0.5s;
+    @include overflow($row);
 
     @include media-w($sm) {
       color: $white;
@@ -189,7 +184,6 @@ a {
     &:active {
       border: 1px solid $accent;
     }
-
   }
 }
 
