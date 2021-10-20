@@ -1,6 +1,10 @@
 .tariffs {
   padding: 44px 0px 142px 0px;
 
+  @include media-w($md) {
+    padding: 44px 0px 42px 0px;
+  }
+
   @include media-w($xxs) {
     padding: 44px 0px 74px 0px;
   }

@@ -1,6 +1,10 @@
 .benefits {
   padding: 90px 0 96px 0;
 
+  @include media-w($md) {
+    padding: 21px 0 27px 0;
+  }
+
   @include media-w($smm) {
     text-align: center;
     padding: 21px 0 27px 0;

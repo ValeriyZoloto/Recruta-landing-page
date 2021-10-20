@@ -1,6 +1,10 @@
 .team {
   padding: 95px 0 48px 0;
 
+  @include media-w($md) {
+    padding: 45px 0 48px 0;
+  }
+
   @include media-w($smm) {
     padding: 85px 0 48px 0;
   }

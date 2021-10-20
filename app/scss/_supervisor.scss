@@ -1,6 +1,10 @@
 .supervisor {
   padding: 144px 0 170px 0;
 
+  @include media-w($md) {
+    padding: 44px 0 70px 0;
+  }
+
   @include media-w($smx) {
     padding: 72px 0 148px 0;
   }

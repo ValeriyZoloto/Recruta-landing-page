@@ -1,6 +1,10 @@
 .policy {
   padding: 0px 0 92px 0;
 
+  @include media-w($md) {
+    padding: 0px;
+  }
+
   @include media-w($smm) {
     padding: 0;
   }

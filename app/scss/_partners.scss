@@ -1,6 +1,10 @@
 .partners {
   padding: 0 0 70px 0;
 
+  @include media-w($md) {
+    padding: 0 0 35px 0;
+  }
+
   &__top {
     min-height: 398px;
     background-color: $accent;
@@ -85,7 +89,7 @@
     &--second {
       padding: 62px 185px 39px 109px;
 
-      @include media-w($smx) {
+      @include media-w($mdb) {
         padding: 24px;
       }
     }
@@ -93,7 +97,7 @@
     &--third {
       padding: 61px 185px 38px 109px;
 
-      @include media-w($smx) {
+      @include media-w($mdb) {
         padding: 24px;
       }
     }
@@ -101,7 +105,7 @@
     &--fours {
       padding: 69px 186px 37px 109px;
 
-      @include media-w($smx) {
+      @include media-w($mdb) {
         padding: 24px;
       }
     }
