@@ -110,10 +110,10 @@
   &__item-inner {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 
     @include media-w($mdb) {
-      flex-direction: column;
-      align-items: center;
+      align-items: flex-start;
     }
   }
 
@@ -133,7 +133,7 @@
     max-width: 515px;
 
     @include media-w($mdb) {
-      margin: 0 auto;
+      text-align: left;
       max-width: 100%;
     }
   }
