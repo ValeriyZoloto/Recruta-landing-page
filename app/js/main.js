@@ -17,4 +17,17 @@ $(function () {
 			top = $(id).offset().top;
 		$("body,html").animate({ scrollTop: top }, 1500);
 	});
+
+	$(".header__btn").on("click", function () {
+		$(".form").addClass("form--active");
+	});
+
+	$(".header__tel-img").on("click", function () {
+		console.log("клик по кнопке");
+		$(".form").addClass("form--active");
+	});
+
+	$(".form__close").on("click", function () {
+		$(".form").removeClass("form--active");
+	});
 });
